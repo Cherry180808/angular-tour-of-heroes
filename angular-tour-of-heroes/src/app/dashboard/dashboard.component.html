@@ -8,4 +8,15 @@
   </a>
 </div>
 
+<app-card [header]="header" [footer]="footer">
+  <div>This is A div</div>
+  <div card-body>This is Card body div</div><!-- <ng-content select="[card-body]"></ng-content> -->
+  <div class="card-body">This is class == Card body div</div><!-- <ng-content select=".card-body"></ng-content> -->
+  <div class="card-body-1">This is class == Card body 1 div</div><!-- <ng-content select=".card-body-1"></ng-content> -->
+  <div class="card-body-2">This is class == Card body 2 div</div><!-- <ng-content select=".card-body-2"></ng-content> -->
+  <div id="card-body-id">This is id == Card body id div</div>
+  <div id="card-body-id-1">This is id == Card body id 1 div</div><!-- <ng-content select="[id=card-body-id-1]"></ng-content> -->
+  <div id="card-body-id-2">This is id == Card body id 2 div</div>
+</app-card>
+
 <app-hero-search></app-hero-search>

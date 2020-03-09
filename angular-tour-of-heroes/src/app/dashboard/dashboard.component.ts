@@ -8,6 +8,8 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  header: string = "my header";
+  footer: string = "my footer"
   heros: Hero[] = [];
   constructor(
     private heroService: HeroService
